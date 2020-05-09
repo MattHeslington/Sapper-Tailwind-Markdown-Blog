@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: src/route/blog/posts
+  path: src/routes/blog/posts
   label: Posts
 upload_dir: static
 public_path: "/static"
