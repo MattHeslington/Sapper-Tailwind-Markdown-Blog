@@ -11,3 +11,5 @@ fields:
 - type: text
   name: image
   label: image
+pages:
+- src/routes/blog/posts/a-test-title.md
