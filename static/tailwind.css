@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*:before,
+*:after {
+    @apply box-border;
+}
+
+body {
+    @apply m-0 font-serif text-base leading-relaxed text-gray-800;
+}
+
+.markdown h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-bold leading-tight mb-0;
+}
+
+.markdown h1 {
+    @apply text-6xl mb-4;
+}
+
+.markdown h2 {
+    @apply text-3xl  mt-6;
+}
+
+.markdown h3 {
+    @apply text-2xl;
+}
+
+.markdown h4 {
+    @apply text-xl;
+}
+
+.markdown h5 {
+    @apply text-lg;
+}
+
+.markdown h6 {
+    @apply text-lg;
+}
+
+.markdown p,
+ul,
+ol {
+    @apply text-lg leading-relaxed mt-5;
+}
+
+.markdown ol,
+ul {
+    @apply pl-8;
+}
+
+.markdown li {
+    @apply mt-4;
+}
+
+.markdown li p {
+    @apply mt-2 mb-2;
+}
+
+.markdown a {
+}
+
+.markdown a:hover {
+    @apply text-red-600;
+}
+
+.markdown p a {
+    @apply;
+}
+
+.markdown p a:hover {
+    @apply;
+}
+
+.markdown img {
+    @apply max-w-full;
+}
+
+.markdown hr {
+    @apply;
+}
+
+.markdown code {
+    @apply;
+}
+
+.markdown pre {
+    @apply;
+}
+
+.markdown pre code {
+    @apply;
+}
+
+.markdown blockquote {
+    @apply;
+}
+
+.markdown blockquote p {
+    @apply;
+}
+
+.markdown blockquote footer {
+    @apply;
+}
+
+.markdown figure {
+    @apply;
+}
+
+.markdown table {
+    @apply;
+}
+
+.markdown th {
+    @apply;
+}
+
+.markdown td {
+    @apply;
+}
