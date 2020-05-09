@@ -4,9 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
+- type: directory
   path: src/routes/blog/posts
   label: Posts
+  create: documents
+  match: "**/*"
 upload_dir: static
 public_path: "/static"
 front_matter_path: ''
