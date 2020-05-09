@@ -6,8 +6,7 @@ webhook_url:
 sections:
 - type: document
   path: src/route/blog/posts
-  label: Document Section
-  match: "**/*"
+  label: Posts
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
