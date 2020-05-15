@@ -12,5 +12,4 @@ fields:
   name: image
   label: image
 pages:
-- src/routes/blog/posts/a-post-from-my-phone.md
 - src/routes/blog/posts/a-test-title.md
