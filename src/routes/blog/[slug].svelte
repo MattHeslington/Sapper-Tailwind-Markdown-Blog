@@ -1,20 +1,21 @@
 <svelte:head>
-  <title>{post.title}</title>
+    <title>{post.title}</title>
 </svelte:head>
 
-<header>
-  <p>{post.printDate} ~ {post.printReadingTime}</p>
-  <h1>{post.title}</h1>
-  <hr />
-</header>
-<div class="container">
-  <article class="content markdown">
-    {@html post.html}
-  </article>
-  <hr />
-  <Bio />
+<div class="container mx-auto">
+    <div class="lg:flex lg:justify-center">
+        <div class="lg:w-3/5">
+            <header class="lg:mt-48">
+                <h1 class="lg:text-5xl lg:font-bold lg:text-myWhite">{post.title}</h1>
+                <p class="lg:mt-2 lg:text-base lg:text-gray-500">{post.printDate} | {post.printReadingTime}</p>
+            </header>
+            <article class="content markdown">
+                {@html post.html}
+            </article>
+            <Bio />
+        </div>
+    </div>
 </div>
-
 
 <script context="module">
   export async function preload({ params, query }) {
@@ -35,25 +36,3 @@
   import Bio from '../../components/Bio.svelte'
   export let post
 </script>
-
-<style>
-  header {
-    text-align: center;
-  }
-
-  header h1 {
-    margin-bottom: 0.7em;
-  }
-
-  header p {
-    color: #AAA;
-    text-transform: uppercase;
-    font-family: Rubik, sans-serif;
-    font-weight: 600;
-  }
-
-  header hr {
-    min-width: 100px;
-    width: 30%;
-  }
-</style>

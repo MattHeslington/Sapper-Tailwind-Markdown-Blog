@@ -5,9 +5,10 @@ const contents = JSON.stringify(
         return {
             title: post.title,
             slug: post.slug,
+            image_url: post.image_url,
             excerpt: post.excerpt,
             printDate: post.printDate,
-            image: post.image,
+            printReadingTime: post.printReadingTime,
         };
     })
 );

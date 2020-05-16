@@ -48,7 +48,7 @@ const posts = fs
     .map((fileName) => {
         const fileMd = fs.readFileSync(path.join(POSTS_DIR, fileName), "utf8");
         const { data, content: rawContent } = matter(fileMd);
-        const { title, date } = data;
+        const { title, date, image_url } = data;
         const slug = fileName.split(".")[0];
         let content = rawContent;
         let excerpt = "";
@@ -63,17 +63,16 @@ const posts = fs
         const readingStats = readingTime(content);
         const printReadingTime = readingStats.text;
         const printDate = formatDate(new Date(date), "MMMM D, YYYY");
-        const image = "";
 
         return {
             title: title || slug,
             slug,
+            image_url,
             html,
             date,
             excerpt,
             printDate,
             printReadingTime,
-            image,
         };
     });
 

@@ -1,6 +1,7 @@
 ---
 title: Markdown Test Page
 date: 2019-06-16T12:51:00.000Z
+image_url: /code.jpg
 ---
 
 A sample page with the most common elements of an article, including headings, paragraphs, lists, and images.
@@ -20,8 +21,6 @@ This page is an adapted version of [markdown-test-page](https://github.com/fullp
 * [Table](#Table)
 * [Code](#Code)
 * [Inline elements](#Inline)
-
-***
 
 # <a name="Headings"></a>Headings
 
@@ -150,8 +149,8 @@ Et fugiat ad nisi amet magna labore do cillum fugiat occaecat cillum Lorem proid
     <img class="rounded-lg md:w-56" src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=448&q=80" alt="Woman paying for a purchase">
   </div>
   <div class="mt-4 md:mt-0 md:ml-6">
-    <div class="uppercase tracking-wide text-sm text-indigo-600 font-bold">Marketing</div>
-    <a href="#" class="block mt-1 text-lg leading-tight font-semibold text-gray-900 hover:underline">Finding customers for your new business</a>
+    <div class="text-sm font-bold tracking-wide text-indigo-600 uppercase">Marketing</div>
+    <a href="#" class="block mt-1 text-lg font-semibold leading-tight text-gray-900 hover:underline">Finding customers for your new business</a>
     <p class="mt-2 text-gray-600">Getting a new business off the ground is a lot of hard work. Here are five ideas you can use to find your first customers.</p>
   </div>
 </div>

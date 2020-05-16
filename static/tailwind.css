@@ -1,4 +1,25 @@
 @tailwind base;
+
+body {
+    @apply transition-colors duration-500 bg-myBlack text-myWhite;
+}
+
+body.dark-mode {
+    @apply bg-myWhite text-myBlack;
+}
+
+body.dark-mode span.hash{
+    @apply text-myPink;
+}
+
+.svg {
+    @apply fill-current text-myWhite;
+}
+
+body.dark-mode .svg {
+    @apply fill-current text-myBlack;
+}
+
 @tailwind components;
 @tailwind utilities;
 
@@ -9,7 +30,7 @@
 }
 
 body {
-    @apply m-0 font-serif text-base leading-relaxed text-gray-800;
+    @apply m-0 font-serif text-base leading-relaxed;
 }
 
 .markdown h1,
@@ -18,15 +39,15 @@ h3,
 h4,
 h5,
 h6 {
-    @apply font-bold leading-tight mb-0;
+    @apply mb-0 font-bold leading-tight;
 }
 
 .markdown h1 {
-    @apply text-6xl mb-4;
+    @apply mb-4 text-6xl;
 }
 
 .markdown h2 {
-    @apply text-3xl  mt-6;
+    @apply mt-6 text-3xl;
 }
 
 .markdown h3 {
@@ -48,7 +69,7 @@ h6 {
 .markdown p,
 ul,
 ol {
-    @apply text-lg leading-relaxed mt-5;
+    @apply mt-5 text-lg leading-relaxed;
 }
 
 .markdown ol,
