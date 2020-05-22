@@ -2,15 +2,13 @@
     <title>About</title>
 </svelte:head>
 
-<div class="container markdown">
-    <h1>About</h1>
-    <div class="flex">
-        <div class="pr-20">
-            <p>
-                Text placeholder via
-                <a href="https://jeffsum.com/" target="_blank">Jeffsum</a>
-                .
-            </p>
+<div class="container mx-auto markdown">
+
+    <div class="lg:flex lg:justify-center">
+        <article class="lg:w-3/5">
+            <header class="lg:mt-48">
+                <h1 class="leading-snug lg:text-6xl lg:font-bold">The About Me Post</h1>
+            </header>
             <p>
                 So you two dig up, dig up dinosaurs? What do they got in there?
                 King Kong? My dad once told me, laugh and the world laughs with
@@ -48,25 +46,6 @@
                 laugh and the world laughs with you, Cry, and I'll give you
                 something to cry about you little bastard!
             </p>
-        </div>
-        <div>
-            <figure>
-                <img
-                    class="rounded-lg"
-                    src="rsz_florian-klauer-489-unsplash.jpg"
-                    alt="Image of a vintage typewriter."
-                />
-                <figcaption>
-                    Photo by
-                    <a
-                        href="https://unsplash.com/@florianklauer"
-                        target="_blank"
-                    >
-                        Florian Klauer
-                    </a>
-                    on Unsplash
-                </figcaption>
-            </figure>
-        </div>
+        </article>
     </div>
 </div>
