@@ -1,13 +1,13 @@
 ---
 title: Building A Blog With Sapper, Tailwind, Markdown and Forestry
 date: "2020-05-17"
-image_url: /post-4.jpg
+image_url: /post-4.webp
 ---
 
 How to build a super-fast blog that scores perfectly with Google using best-in-class tools.
 
 <!-- more -->
-![Super wide](/post-4.jpg)
+![Super wide](/post-4.webp)
 
 ## Building A Super-Fast Blog
 
