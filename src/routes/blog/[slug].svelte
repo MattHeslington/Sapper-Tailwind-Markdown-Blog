@@ -4,35 +4,35 @@
 
 <div class="container mx-auto">
     <div class="lg:flex lg:justify-center">
-        <div class="lg:w-3/5">
+        <article class="lg:w-3/5">
             <header class="lg:mt-48">
-                <h1 class="lg:text-5xl lg:font-bold lg:text-myWhite">{post.title}</h1>
-                <p class="lg:mt-2 lg:text-base lg:text-gray-500">{post.printDate} | {post.printReadingTime}</p>
+                <h1 class="leading-snug lg:text-6xl lg:font-bold">{post.title}</h1>
+                <div class="flex items-center lg:mt-6"><img class="w-6 h-6 rounded-full" src="/me.jpg" alt="A small image of me."><span class="ml-2 text-gray-500 high-contrast-grey">Matt, <time pubdate="pubdate" datetime="{post.printDate}">{post.printDate}</time> | {post.printReadingTime}</span></div>
             </header>
-            <article class="content markdown">
+            <main role="main" class="content markdown lg:mt-12">
                 {@html post.html}
-            </article>
-            <Bio />
-        </div>
+            </main>
+            <!--Bio /-->
+        </article>
     </div>
 </div>
 
 <script context="module">
-  export async function preload({ params, query }) {
-    // the `slug` parameter is available because
-    // this file is called [slug].html
-    const res = await this.fetch(`blog/${params.slug}.json`);
-    const data = await res.json();
 
-    if (res.status === 200) {
-      return { post: data };
-    } else {
-      this.error(res.status, data.message);
-    }
-  }
+    export async function preload({ params, query }) {
+        // the `slug` parameter is available because
+        // this file is called [slug].html
+        const res = await this.fetch(`blog/${params.slug}.json`);
+        const data = await res.json();
+
+        if (res.status === 200) {
+            return { post: data };
+            } else {
+                this.error(res.status, data.message);
+            }
+        }
 </script>
 
 <script>
-  import Bio from '../../components/Bio.svelte'
-  export let post
+    export let post;
 </script>

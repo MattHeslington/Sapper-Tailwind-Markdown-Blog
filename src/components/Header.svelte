@@ -1,4 +1,4 @@
-<header class="flex justify-between pt-4 markdown">
+<header class="flex items-center justify-between pt-4 markdown">
     <Logo />
     <Switch />
 </header>
