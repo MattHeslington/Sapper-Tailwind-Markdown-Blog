@@ -13,7 +13,7 @@
 
 <main class="mt-4 lg:w-1/2 lg:mt-8 md:w-1/2">
     <p class="text-4xl font-bold md:text-6xl">Hi, I'm Matt.</p>
-    <p class="mt-5 text-xl font-light leading-snug lg:text-4xl lg:mt-8">I built progressive web applications that score perfectly with Google for performance, seo, best practices and accessibility.&nbsp;<a href="/about"><span class="text-xs text-gray-500 lg:text-base high-contrast-grey">Find out more.</span></a></p>
+    <p class="mt-5 text-xl font-light leading-snug lg:text-4xl lg:mt-8">I build progressive web applications that score perfectly with Google for performance, seo, best practices and accessibility.&nbsp;<a href="/about"><span class="text-xs text-gray-500 lg:text-base high-contrast-grey">Find out more.</span></a></p>
 </main>
 
 
