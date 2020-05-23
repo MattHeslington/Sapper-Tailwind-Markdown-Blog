@@ -32,11 +32,6 @@ body.light-mode .high-contrast-grey {
     @apply text-gray-800;
 }
 
-/*test render problem*/
-.markdown blockquote p {
-    @apply pl-8 -ml-4 -mr-4 font-serif text-3xl italic leading-loose border-l border-myBlue;
-}
-
 @tailwind components;
 @tailwind utilities;
 
@@ -138,7 +133,7 @@ ul {
 }
 
 .markdown blockquote p {
-    @apply;
+    @apply pl-8 -ml-4 -mr-4 font-serif text-3xl italic leading-loose border-l border-myBlue;
 }
 
 .markdown blockquote footer {
