@@ -1,4 +1,9 @@
 module.exports = {
+    purge: [
+    './src/**/*.html',
+    './src/**/*.svelte',
+    './src/**/*.jsx',
+  ],
     theme: {
         extend: {
             colors: {
