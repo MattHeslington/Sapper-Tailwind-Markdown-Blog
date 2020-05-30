@@ -1,8 +1,24 @@
 @tailwind base;
 
+/*
+
+============================================================================
+                    ADD YOUR OWN BASE STYLES BELOW
+============================================================================
+
+*/
+
 body {
     @apply transition-colors duration-500 bg-myBlack text-myWhite;
 }
+
+/*
+
+========================================
+THEME SWITCHER
+========================================
+
+*/
 
 body.light-mode {
     @apply bg-myWhite text-myBlack;
@@ -32,18 +48,13 @@ body.light-mode .high-contrast-grey {
     @apply text-gray-800;
 }
 
-@tailwind components;
-@tailwind utilities;
+/*
 
-*,
-*:before,
-*:after {
-    @apply box-border;
-}
+========================================
+MARKDOWN STYLING
+========================================
 
-body {
-    @apply font-serif text-base antialiased leading-relaxed;
-}
+*/
 
 .markdown h1,
 h2,
@@ -97,73 +108,22 @@ ul {
     @apply mt-2 mb-2;
 }
 
-.markdown a {
-}
-
-.markdown a:hover {
-    @apply text-red-600;
-}
-
-.markdown p a {
-    @apply;
-}
-
-.markdown p a:hover {
-    @apply;
+.markdown blockquote p {
+    @apply pl-8 -ml-4 -mr-4 font-serif text-3xl italic leading-loose border-l border-myBlue;
 }
 
 .markdown img {
     @apply max-w-full;
 }
 
-.markdown hr {
-    @apply;
-}
+/*
 
-.markdown code {
-    @apply;
-}
+========================================
+CODE FORMATTING
+========================================
 
-/*.markdown pre {
-    @apply p-8 font-mono bg-black rounded text-myGreen;
-}*/
+*/
 
-.markdown pre code {
-    @apply;
-}
-
-.markdown blockquote p {
-    @apply pl-8 -ml-4 -mr-4 font-serif text-3xl italic leading-loose border-l border-myBlue;
-}
-
-.markdown blockquote footer {
-    @apply;
-}
-
-.markdown figure {
-    @apply;
-}
-
-.markdown table {
-    @apply;
-}
-
-.markdown th {
-    @apply;
-}
-
-.markdown td {
-    @apply;
-}
-
-
-/* PrismJS 1.20.0
-https://prismjs.com/download.html#themes=prism-twilight&languages=markup+css+clike+javascript */
-/**
- * prism.js Twilight theme
- * Based (more or less) on the Twilight theme originally of Textmate fame.
- * @author Remy Bach
- */
 code[class*="language-"],
 pre[class*="language-"] {
 	color: white;
@@ -358,3 +318,13 @@ pre[data-line] {
 	top: auto;
 }
 
+@tailwind components;
+@tailwind utilities;
+
+/*
+
+============================================================================
+                    ADD YOUR OWN UTILITIES BELOW
+============================================================================
+
+*/
