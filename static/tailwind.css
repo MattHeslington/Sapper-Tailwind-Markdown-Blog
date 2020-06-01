@@ -135,7 +135,7 @@ CODE WRAP
 }
 
 .code-inner{
-    @apply flex mb-2 top;
+    @apply flex mb-2;
 }
 
 .mac-window-red{
