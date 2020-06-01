@@ -131,7 +131,7 @@ CODE WRAP
 */
 
 .code-wrapper{
-    @apply px-5 pt-4 pb-6 overflow-hidden font-mono text-sm subpixel-antialiased leading-normal text-gray-100 bg-black rounded-lg shadow-lg coding inverse-toggle;
+    @apply px-5 pt-4 pb-6 overflow-hidden font-mono text-sm subpixel-antialiased leading-normal text-gray-100 bg-black rounded-lg shadow-lg inverse-toggle;
 }
 
 .code-inner{
