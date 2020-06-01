@@ -1,7 +1,7 @@
   
 {
 	"short_name": "Good Code Blog",
-	"name": "An extremely opinionated Sapper project base",
+	"name": "Good Code Blog",
 	"description": "A Web Developer's Blog",
 	"categories": [
 		"personalization",
@@ -26,7 +26,7 @@
 	"start_url": "/",
 	"display": "fullscreen",
 	"background_color": "#111216",
-	"theme_color": "#0096D1",
+	"theme_color": "#111216",
 	"screenshots": [
 		{
 			"src": "screenshot-1.png",

@@ -24,12 +24,12 @@
 </div>
 
 <div class="mt-12 lg:mt-32">
-    <div>
-        <h3 class="text-xl font-normal">Blog Posts</h3>
+    <div class="mb-4">
+        <h3 class="font-normal text:sm lg:text-xl">Blog Posts</h3>
     </div>
     {#each posts as post, index}
-        <article>
-            <a class="mt-4 mb-8 lg:mb-12 lg:flex lg:mt-8 md:flex" rel="prefetch" href="blog/{post.slug}">
+        <article class="mt-4 mb-8 lg:mb-12 lg:mt-8">
+            <a class="md:flex" rel="prefetch" href="blog/{post.slug}">
                 <div class="lg:w-1/2 lg:pr-6 md:w-1/2 md:pr-6">
                     <img class="object-cover w-full h-32 lg:h-64" src="{post.image_url}" alt="{post.title}">
                 </div>

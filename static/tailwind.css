@@ -70,7 +70,7 @@ h6 {
 }
 
 .markdown h2 {
-    @apply mt-6 text-5xl;
+    @apply mt-6 text-4xl;
 }
 
 .markdown h3 {
@@ -108,8 +108,14 @@ ul {
     @apply mt-2 mb-2;
 }
 
-blockquote p {
-    @apply pl-8 -ml-4 -mr-4 font-serif text-3xl italic leading-loose border-l border-myBlue;
+.markdown blockquote p {
+    @apply pl-8 -ml-4 -mr-4 font-serif text-xl italic leading-loose border-l border-myBlue;
+}
+
+@screen lg {
+  .markdown blockquote p {
+    @apply text-2xl;
+  }
 }
 
 .markdown img {
