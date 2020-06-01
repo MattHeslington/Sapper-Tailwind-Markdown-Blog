@@ -1,5 +1,3 @@
-import { url } from "inspector";
-
 const fs = require("fs");
 const path = require("path");
 const prism = require("prismjs");

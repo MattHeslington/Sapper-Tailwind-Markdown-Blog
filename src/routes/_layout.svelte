@@ -1,5 +1,5 @@
 <div class="container mx-auto">
-    <Header {segment} />
+    <Header/>
 
     <main>
         <slot></slot>
