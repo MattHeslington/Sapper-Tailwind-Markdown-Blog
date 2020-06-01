@@ -125,6 +125,34 @@ ul {
 /*
 
 ========================================
+CODE WRAP
+========================================
+
+*/
+
+.code-wrapper{
+    @apply px-5 pt-4 pb-6 overflow-hidden font-mono text-sm subpixel-antialiased leading-normal text-gray-100 bg-black rounded-lg shadow-lg coding inverse-toggle;
+}
+
+.code-inner{
+    @apply flex mb-2 top;
+}
+
+.mac-window-red{
+    @apply w-3 h-3 rounded-full bg-macRed;
+}
+
+.mac-window-yellow{
+    @apply w-3 h-3 bg-macYellow rounded-full
+}
+
+.mac-window-green{
+    @apply w-3 h-3 bg-macGreen rounded-full
+}
+
+/*
+
+========================================
 CODE FORMATTING
 ========================================
 

@@ -35,7 +35,7 @@ renderer.link = (href, title, text) => {
 renderer.code = (code, language) => {
     const parser = prism.languages[language] || prism.languages.html;
     const highlighted = prism.highlight(code, parser, language);
-    return `<div class='px-5 pt-4 pb-6 overflow-hidden font-mono text-sm subpixel-antialiased leading-normal text-gray-100 bg-black rounded-lg shadow-lg coding inverse-toggle'><div class='flex mb-2 top'><div class='w-3 h-3 bg-macRed rounded-full'></div><div class='w-3 h-3 ml-2 bg-macYellow rounded-full'></div><div class='w-3 h-3 ml-2 bg-macGreen rounded-full'></div></div><pre class="language-${language}"><code class="language-${language}">${highlighted}</code></pre></div>`;
+    return `<div class='code-wrapper'><div class='code-inner'><div class='mac-window-red'></div><div class='mac-window-yellow'></div><div class='mac-window-green'></div></div><pre class="language-${language}"><code class="language-${language}">${highlighted}</code></pre></div>`;
 };
 
 marked.setOptions({ renderer });
