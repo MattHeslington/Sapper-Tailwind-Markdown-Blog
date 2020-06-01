@@ -1,5 +1,5 @@
 @tailwind base;
-
+/* purgecss start ignore */
 /*
 
 ============================================================================
@@ -108,7 +108,7 @@ ul {
     @apply mt-2 mb-2;
 }
 
-.markdown blockquote p {
+blockquote p {
     @apply pl-8 -ml-4 -mr-4 font-serif text-3xl italic leading-loose border-l border-myBlue;
 }
 
@@ -317,7 +317,7 @@ pre[data-line] {
 	content: attr(data-end);
 	top: auto;
 }
-
+/* purgecss end ignore */
 @tailwind components;
 @tailwind utilities;
 

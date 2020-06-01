@@ -6,10 +6,9 @@
 <div class="mt-10 lg:mt-32">
     <p>
         <span class="font-mono text-xl line-through lg:text-3xl text-myBlue hash">#nocode</span>
-        <span class="font-mono lg:pl-4 lg:text-3xl text-myBlue hash">#shitecode</span>
+        <span class="font-mono lg:pl-4 lg:text-3xl text-myBlue hash">#goodcode</span>
     </p>
 </div>
-
 
 <main class="mt-4 lg:w-1/2 lg:mt-8 md:w-1/2">
     <p class="text-4xl font-bold md:text-6xl">Hi, I'm Matt.</p>

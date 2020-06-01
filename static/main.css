@@ -86,15 +86,15 @@ a {
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
 
-
-strong {
-  font-weight: bolder;
-}
-
 /**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
+
+code {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
 
 /**
  * Add the correct font size in all browsers.
@@ -292,7 +292,7 @@ button:-moz-focusring,
  * Removes the default spacing and border for appropriate elements.
  */
 
-
+blockquote,
 h1,
 h2,
 h3,
@@ -439,7 +439,8 @@ input {
  * 'mono' font family.
  */
 
-pre {
+pre,
+code {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -534,7 +535,10 @@ MARKDOWN STYLING
 
 .markdown h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: 0;
   font-weight: 700;
   line-height: 1.25;
@@ -554,10 +558,50 @@ h3 {
   font-size: 1.5rem;
 }
 
-.markdown p {
+.markdown h4 {
+  font-size: 1.25rem;
+}
+
+.markdown h5 {
+  font-size: 1.125rem;
+}
+
+.markdown h6 {
+  font-size: 1.125rem;
+}
+
+.markdown p,
+ul,
+ol {
   margin-top: 1.25rem;
   font-size: 1.25rem;
   line-height: 2;
+}
+
+.markdown ol,
+ul {
+  padding-left: 2rem;
+}
+
+.markdown li {
+  margin-top: 1rem;
+}
+
+.markdown li p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+blockquote p {
+  padding-left: 2rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+  font-size: 1.875rem;
+  font-style: italic;
+  line-height: 2;
+  border-left-width: 1px;
+  border-color: #30BCED;
 }
 
 .markdown img {
@@ -572,7 +616,7 @@ CODE FORMATTING
 
 */
 
-
+code[class*="language-"],
 pre[class*="language-"] {
   color: white;
   background: none;
@@ -594,7 +638,8 @@ pre[class*="language-"] {
   hyphens: none;
 }
 
-pre[class*="language-"] {
+pre[class*="language-"],
+:not(pre) > code[class*="language-"] {
   background: hsl(0, 0%, 0%);
 }
 
@@ -618,17 +663,94 @@ pre[class*="language-"]::selection {
 
 /* Text Selection colour */
 
-pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection {
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
   text-shadow: none;
   background: hsla(0, 0%, 93%, 0.15); /* #EDEDED */
 }
 
-pre[class*="language-"]::selection, pre[class*="language-"] ::selection {
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
   text-shadow: none;
   background: hsla(0, 0%, 93%, 0.15); /* #EDEDED */
 }
 
 /* Inline code */
+
+:not(pre) > code[class*="language-"] {
+  border-radius: .3em;
+  border: .13em solid hsl(0, 0%, 33%); /* #545454 */
+  box-shadow: 1px 1px .3em -.1em black inset;
+  padding: .15em .2em .05em;
+  white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: hsl(0, 0%, 47%); /* #777777 */
+}
+
+.token.punctuation {
+  opacity: .7;
+}
+
+.token.namespace {
+  opacity: .7;
+}
+
+.token.tag,
+.token.boolean,
+.token.number,
+.token.deleted {
+  color: hsl(14, 58%, 55%); /* #CF6A4C */
+}
+
+.token.keyword,
+.token.property,
+.token.selector,
+.token.constant,
+.token.symbol,
+.token.builtin {
+  color: hsl(53, 89%, 79%); /* #F9EE98 */
+}
+
+.token.attr-name,
+.token.attr-value,
+.token.string,
+.token.char,
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string,
+.token.variable,
+.token.inserted {
+  color: hsl(76, 21%, 52%); /* #8F9D6A */
+}
+
+.token.atrule {
+  color: hsl(218, 22%, 55%); /* #7587A6 */
+}
+
+.token.regex,
+.token.important {
+  color: hsl(42, 75%, 65%); /* #E9C062 */
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.entity {
+  cursor: help;
+}
 
 pre[data-line] {
   padding: 1em 0 1em 3em;
@@ -637,7 +759,58 @@ pre[data-line] {
 
 /* Markup */
 
+.language-markup .token.tag,
+.language-markup .token.attr-name,
+.language-markup .token.punctuation {
+  color: hsl(33, 33%, 52%); /* #AC885B */
+}
+
 /* Make the tokens sit above the line highlight so the colours don't look faded. */
+
+.token {
+  position: relative;
+  z-index: 1;
+}
+
+.line-highlight {
+  background: hsla(0, 0%, 33%, 0.25); /* #545454 */
+  background: linear-gradient(to right, hsla(0, 0%, 33%, .1) 70%, hsla(0, 0%, 33%, 0)); /* #545454 */
+  border-bottom: 1px dashed hsl(0, 0%, 33%); /* #545454 */
+  border-top: 1px dashed hsl(0, 0%, 33%); /* #545454 */
+  left: 0;
+  line-height: inherit;
+  margin-top: 0.75em; /* Same as .prism’s padding-top */
+  padding: inherit 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  white-space: pre;
+  z-index: 0;
+}
+
+.line-highlight:before,
+.line-highlight[data-end]:after {
+  background-color: hsl(215, 15%, 59%); /* #8794A6 */
+  border-radius: 999px;
+  box-shadow: 0 1px white;
+  color: hsl(24, 20%, 95%); /* #F5F2F0 */
+  content: attr(data-start);
+  font: bold 65%/1.5 sans-serif;
+  left: .6em;
+  min-width: 1em;
+  padding: 0 .5em;
+  position: absolute;
+  text-align: center;
+  text-shadow: none;
+  top: .4em;
+  vertical-align: .3em;
+}
+
+.line-highlight[data-end]:after {
+  bottom: .4em;
+  content: attr(data-end);
+  top: auto;
+}
 
 .container {
   width: 100%;
@@ -667,8 +840,24 @@ pre[data-line] {
   }
 }
 
+.bg-black {
+  background-color: #000;
+}
+
 .bg-white {
   background-color: #fff;
+}
+
+.bg-macGreen {
+  background-color: #52C22C;
+}
+
+.bg-macYellow {
+  background-color: #FFBE2D;
+}
+
+.bg-macRed {
+  background-color: #FF6058;
 }
 
 .border-gray-800 {
@@ -681,6 +870,10 @@ pre[data-line] {
 
 .rounded {
   border-radius: 0.25rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .rounded-full {
@@ -735,6 +928,10 @@ pre[data-line] {
   font-weight: 700;
 }
 
+.h-3 {
+  height: 0.75rem;
+}
+
 .h-6 {
   height: 1.5rem;
 }
@@ -753,6 +950,10 @@ pre[data-line] {
 
 .leading-snug {
   line-height: 1.375;
+}
+
+.leading-normal {
+  line-height: 1.5;
 }
 
 .m-4 {
@@ -820,6 +1021,10 @@ pre[data-line] {
   outline: 0;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -842,8 +1047,17 @@ pre[data-line] {
   padding-right: 0.75rem;
 }
 
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pb-6 {
+  padding-bottom: 1.5rem;
 }
 
 .absolute {
@@ -870,6 +1084,10 @@ pre[data-line] {
   color: #fff;
 }
 
+.text-gray-100 {
+  color: #f7fafc;
+}
+
 .text-gray-500 {
   color: #a0aec0;
 }
@@ -880,6 +1098,10 @@ pre[data-line] {
 
 .text-xs {
   font-size: 0.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
 }
 
 .text-base {
@@ -914,12 +1136,21 @@ pre[data-line] {
   text-decoration: line-through;
 }
 
+.subpixel-antialiased {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+}
+
 .tracking-wide {
   letter-spacing: 0.025em;
 }
 
 .invisible {
   visibility: hidden;
+}
+
+.w-3 {
+  width: 0.75rem;
 }
 
 .w-6 {
