@@ -1,6 +1,6 @@
 <header class="flex items-center justify-between pt-4 markdown">
-    <Logo />
-    <Switch />
+    <Logo/>
+    <Switch/>
 </header>
 
 <script>
