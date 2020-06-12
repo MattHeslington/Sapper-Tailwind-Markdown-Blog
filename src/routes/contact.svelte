@@ -1,5 +1,5 @@
 <svelte:head>
-    <title>Contact</title>
+    <title>Get in Touch</title>
 </svelte:head>
 
 <div class="container mx-auto markdown">
@@ -10,24 +10,24 @@
                 <h1 class="leading-snug lg:text-6xl lg:font-bold">Contact me and that</h1>
             </header>
             <div class="flex items-center w-full h-screen bg-teal-lighter">
-                <div class="w-full p-8 m-4 bg-white rounded shadow-lg md:max-w-sm md:mx-auto">
+                <div class="w-full p-8 m-4 rounded shadow-lg md:max-w-sm md:mx-auto">
                     <h1 class="block w-full mb-6 text-center">Sign Up</h1>
                     <form class="mb-4 md:flex md:flex-wrap md:justify-between" action="/" method="post">
                         <div class="flex flex-col mb-4 md:w-1/2">
                             <label class="mb-2 text-lg font-bold tracking-wide uppercase" for="first_name">First Name</label>
-                            <input class="px-3 py-2 border md:mr-2" type="text" name="first_name" id="first_name">
+                            <input class="px-3 py-2 border border-gray-800 md:mr-2 bg-myBlack" type="text" name="first_name" id="first_name">
                         </div>
                         <div class="flex flex-col mb-4 md:w-1/2">
                             <label class="mb-2 text-lg font-bold uppercase md:ml-2" for="last_name">Last Name</label>
-                            <input class="px-3 py-2 border md:ml-2" type="text" name="last_name" id="last_name">
+                            <input class="px-3 py-2 border border-gray-800 md:ml-2 bg-myBlack" type="text" name="last_name" id="last_name">
                         </div>
                         <div class="flex flex-col mb-4 md:w-full">
                             <label class="mb-2 text-lg font-bold uppercase" for="email">Email</label>
-                            <input class="px-3 py-2 border" type="email" name="email" id="email">
+                            <input class="px-3 py-2 border border-gray-800 bg-myBlack" type="email" name="email" id="email">
                         </div>
                         <div class="flex flex-col mb-6 md:w-full">
                             <label class="mb-2 text-lg font-bold uppercase" for="password">Password</label>
-                            <input class="px-3 py-2 border" type="password" name="password" id="password">
+                            <input class="px-3 py-2 border border-gray-800 bg-myBlack" type="password" name="password" id="password">
                         </div>
                         <button class="block p-4 mx-auto text-lg text-white uppercase rounded bg-teal hover:bg-teal-dark" type="submit">Create Account</button>
                     </form>

@@ -6,30 +6,35 @@
         <meta name="theme-color" content="#111216" />
         <meta name="description" content="Web Development and Mac OS Blog Discussing, Among Other Things, Contemporary Jamstack Technologies"/>
 
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://metatags.io/">
+        <meta property="og:title" content="My Title — Something, Else and Here">
+        <meta property="og:description" content="With the description you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
+        <meta property="og:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://metatags.io/">
+        <meta property="twitter:title" content="My Title — Something, Else and Here">
+        <meta property="twitter:description" content="With the description you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!">
+        <meta property="twitter:image" content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+
         %sapper.base%
 
         <link rel="stylesheet" href="main.css" />
         <link rel="manifest" href="manifest.json" />
         <link rel="icon" type="image/png" href="favicon.png" />
 
-        <!-- Sapper generates a <style> tag containing critical CSS
-	    for the current page. CSS for the rest of the app is
-	    lazily loaded when it precaches secondary pages -->
         %sapper.styles%
 
-        <!-- This contains the contents of the <svelte:head> component, if
-	     the current page has one -->
         %sapper.head%
+
     </head>
     <body class="p-4 font-sans">
         <noscript><p>This website is only available in browsers where Javascript is supported.</p></noscript>
-        <!-- The application will be rendered inside this element,
-	     because `app/client.js` references it -->
+        
         <div id="sapper">%sapper.html%</div>
 
-        <!-- Sapper creates a <script> tag containing `app/client.js`
-	     and anything else it needs to hydrate the app and
-	     initialise the router -->
         %sapper.scripts%
+        
     </body>
 </html>
