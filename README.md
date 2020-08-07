@@ -1,15 +1,45 @@
-# sapper-blog-template
+<h1 align="center">Welcome to Markdown-Blog-Sapper-Tailwind 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
+  <a href="https://twitter.com/\_matt\_dev\_" target="_blank">
+    <img alt="Twitter: \_matt\_dev\_" src="https://img.shields.io/twitter/follow/\_matt\_dev\_.svg?style=social" />
+  </a>
+</p>
 
-A starter template for building markdown-powered blogs with [Sapper](https://github.com/sveltejs/sapper) and [Svelte](https://github.com/sveltejs/svelte).
+> A lightening-fast markdown blog built with Sapper and styled with Tailwind
 
+![image](https://user-images.githubusercontent.com/8208896/89637992-aa9cdb80-d8dd-11ea-8eb3-270a12160462.png)
 
-## ✨ Getting started
+### ✨ [Demo](https://good-code.now.sh/)
 
-```bash
-npx degit Charca/sapper-blog-template my-blog
-cd my-blog
-npm install # or yarn!
+## Install
+
+```sh
+npm install
+```
+
+## Usage
+
+```sh
 npm run dev
 ```
 
-Open up [localhost:3000](http://localhost:3000) and start clicking around.
+## Run tests
+
+```sh
+npm run test
+```
+
+## Author
+
+👤 **Matt Heslington**
+
+* Twitter: [@\_matt\_dev\_](https://twitter.com/\_matt\_dev\_)
+* Github: [@MattHeslington](https://github.com/MattHeslington)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

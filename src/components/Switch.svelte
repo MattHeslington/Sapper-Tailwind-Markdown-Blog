@@ -17,6 +17,6 @@
 
 <script>
     function toggle() {
-    window.document.body.classList.toggle('light-mode')
-}
+        window.document.body.classList.toggle('light-mode')
+    }
 </script>

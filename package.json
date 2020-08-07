@@ -1,6 +1,6 @@
 {
-    "name": "matt.heslington.dev",
-    "description": "Blog of Matt Heslington",
+    "name": "Markdown-Blog-Sapper-Tailwind",
+    "description": "A lightening-fast markdown blog built with Sapper and styled with Tailwind",
     "version": "0.0.1",
     "scripts": {
         "dev": "sapper dev",

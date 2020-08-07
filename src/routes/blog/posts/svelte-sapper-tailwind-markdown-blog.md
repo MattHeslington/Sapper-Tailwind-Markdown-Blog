@@ -1,7 +1,7 @@
 ---
-title: Hello World 👋
-date: "2019-06-11T08:38:00.000Z"
-image_url: /desk.webp
+title: Why I Built a Blog With Sapper and Tailwind Which Reads Markdown Files
+date: "2020-06-12"
+image_url: /mymbp.webp
 ---
 
 Every blog starts with a single post. This is yours. Make it great.

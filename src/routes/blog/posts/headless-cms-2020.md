@@ -1,7 +1,7 @@
 ---
-title: Markdown Test Page
+title: Headless CMS Appraisal 2020
 date: 2019-06-16T12:51:00.000Z
-image_url: /code.webp
+image_url: /headless-cms-2020.webp
 ---
 
 A sample page with the most common elements of an article, including headings, paragraphs, lists, and images.

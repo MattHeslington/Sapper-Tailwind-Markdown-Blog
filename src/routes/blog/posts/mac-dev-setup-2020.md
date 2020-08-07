@@ -1,10 +1,10 @@
 ---
-title: The Difficult Third Post 🤸‍♂️
-date: 2020-31-03
-image_url: /blog_3.webp
+title: Setup Your Mac for Development
+date: 2020-06-06
+image_url: /dev-setup.webp
 ---
 
-They say the third of anything is always the hardest. Let's see what you think of this.
+The tools I love working with.
 
 <!-- more -->
 
